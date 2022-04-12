@@ -23,7 +23,7 @@ function getdata() {
   var local_area = document.getElementById("area").value;
   setInterval(get_data, 600000);
   let ar = local_area;
-  let api_key = "1501913eac2b4051bfb114022223103";
+  let api_key = "425dbbc532db47a4883205732221204";
   url = `https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${ar}&days=1&aqi=yes&alerts=yes`;
   function get_data() {
     fetch(url).then((response) => {
