@@ -276,3 +276,64 @@ td {
   color: white;
   margin-left: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display:grid;
+    grid-template-areas: 'header' 'box1' 'box2' 'box3' 'box4' 'box5' 'footer';
+  }
+  .container1{
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .container2{
+    grid-area: box1;
+    width: 100%;
+    height: 100%;
+  }
+  .container3{
+    grid-area: box2;
+    width: 100%;
+    height: 100%;
+  }
+  .container4{
+    grid-area: box3;
+    width: 100%;
+    height: 100%;
+  }
+  .container6{
+    grid-area: box5;
+    width: 100%;
+    height: 100%;
+  }
+  .container7{
+    
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+  }
+  #main_heading{
+    text-align: center;
+    float: none;
+    margin: 0px;
+  }
+  #enter_location{
+    float: none;
+    margin-left: 32%;
+  }
+  #area{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 0px;
+    padding-right: 0px;
+    float: left;
+  }
+  #location{
+    float:left;
+    margin-top: 0px;
+  }
+  #icon{margin-left: 40%;
+  float: left;}
+}
