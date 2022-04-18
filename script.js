@@ -174,7 +174,7 @@ function getdata() {
 
       var country = data.location.name + " Weather";
       function getdata2() {
-        url2 = `https://newsapi.org/v2/everything?q=${country}&from=2022-03-10&language=en&sortBy=publishedAt&apiKey=41f8fa5173d549b282db24b6a79f80f9`;
+        url2 = `http://newsapi.org/v2/everything?q=${country}&language=en&sortBy=publishedAt&apiKey=41f8fa5173d549b282db24b6a79f80f9`;
         fetch(url2).then((response) => {
           return response.json();
         }).then((data2) => {
