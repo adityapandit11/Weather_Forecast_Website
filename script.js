@@ -174,7 +174,7 @@ function getdata() {
 
       var country = data.location.name + " Weather";
       function getdata2() {
-        url2 = `http://newsapi.org/v2/everything?q=${country}&language=en&sortBy=publishedAt&apiKey=41f8fa5173d549b282db24b6a79f80f9`;
+        url2 ='https://api.currentsapi.services/v1/latest-news?apiKey=xbdEohR7VUVtO5Efr8V7nvNjqm5prUjOQit4GWz_U5Qx2ead';
         fetch(url2).then((response) => {
           return response.json();
         }).then((data2) => {
@@ -184,13 +184,13 @@ function getdata() {
           //container 6
 
           for (i = 1; i < 6; i++) {
-            document.getElementById(`news${i}`).innerHTML = `Title ${i} : ${data2.articles[i - 1].title}`;
-            document.getElementById(`content${i}`).innerHTML = data2.articles[i - 1].content;
-            document.getElementById(`description${i}`).innerHTML = data2.articles[i - 1].description;
-            document.getElementById(`news_img${i}`).src = data2.articles[i - 1].urlToImage;
-            document.getElementById(`source${i}`).innerHTML = `Source: ${data2.articles[i-1].source.name}`;
-            result = `"<a href='${data2.articles[i-1].url}' target="_blank"> ${data2.articles[i-1].url} </a>"`;
-            document.getElementById(`url${i}`).innerHTML = "Url: "+ result;
+            document.getElementById(`news${i}`).innerHTML = `Title ${i} : ${data2.news[i-1].title}`;
+           // document.getElementById(`content${i}`).innerHTML = data2.articles[i].content;
+            document.getElementById(`description${i}`).innerHTML = data2.news[i-1].description;
+            document.getElementById(`news_img${i}`).src = data2.news[i - 1].image;
+            document.getElementById(`source${i}`).innerHTML = `Source: ${data2.news[i - 1].author}`;
+            //result = `"<a href='${data2.articles[i-1].url}' target="_blank"> ${data2.news[i - 1].url} </a>"`;
+            //document.getElementById(`url${i}`).innerHTML = "Url: "+ result;
           }
 
 
