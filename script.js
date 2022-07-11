@@ -4,6 +4,15 @@ let area_loation = document.getElementById("location");
 
 let container1 = document.getElementById("container1");
 
+let area01 = document.getElementById("area");
+
+area01.addEventListener("keypress", function(event){
+   if(event.key==="Enter"){
+    event.preventDefault();
+    document.getElementById("location").click();
+   }
+} )
+
 
 
 
@@ -183,7 +192,7 @@ function getdata() {
 
           //container 6
 
-          for (i = 1; i < 6; i++) {
+          for (i = 1; i < 7; i++) {
             document.getElementById(`news${i}`).innerHTML = `Title ${i} : ${data2.news[i-1].title}`;
            // document.getElementById(`content${i}`).innerHTML = data2.articles[i].content;
             document.getElementById(`description${i}`).innerHTML = data2.news[i-1].description;
@@ -196,21 +205,12 @@ function getdata() {
 
         })
 
-
-
-
-
-
       }
       getdata2();
-
-
-
 
     })
   }
   get_data();
-
 
 }
 
@@ -224,6 +224,11 @@ function news_down_btn1() {
   document.getElementById('news_btn3').style.display = "none";
   document.getElementById('news_btn4').style.display = "none";
   document.getElementById('news_btn5').style.display = "none";
+  document.getElementById('news_btn6').style.display = "none";
+  // document.getElementById('news_btn7').style.display = "none";
+  // document.getElementById('news_btn8').style.display = "none";
+  // document.getElementById('news_btn9').style.display = "none";
+  // document.getElementById('news_btn10').style.display = "none";
   var x = document.getElementById(`news_btn1`);
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -238,6 +243,11 @@ function news_down_btn2() {
   document.getElementById('news_btn3').style.display = "none";
   document.getElementById('news_btn4').style.display = "none";
   document.getElementById('news_btn5').style.display = "none";
+  document.getElementById('news_btn6').style.display = "none";
+  // document.getElementById('news_btn7').style.display = "none";
+  // document.getElementById('news_btn8').style.display = "none";
+  // document.getElementById('news_btn9').style.display = "none";
+  // document.getElementById('news_btn10').style.display = "none";
   var x = document.getElementById(`news_btn2`);
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -251,6 +261,11 @@ function news_down_btn3() {
   document.getElementById('news_btn2').style.display = "none";
   document.getElementById('news_btn4').style.display = "none";
   document.getElementById('news_btn5').style.display = "none";
+  document.getElementById('news_btn6').style.display = "none";
+  // document.getElementById('news_btn7').style.display = "none";
+  // document.getElementById('news_btn8').style.display = "none";
+  // document.getElementById('news_btn9').style.display = "none";
+  // document.getElementById('news_btn10').style.display = "none";
   var x = document.getElementById(`news_btn3`);
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -265,6 +280,11 @@ function news_down_btn4() {
   document.getElementById('news_btn2').style.display = "none";
   document.getElementById('news_btn3').style.display = "none";
   document.getElementById('news_btn5').style.display = "none";
+  document.getElementById('news_btn6').style.display = "none";
+  // document.getElementById('news_btn7').style.display = "none";
+  // document.getElementById('news_btn8').style.display = "none";
+  // document.getElementById('news_btn9').style.display = "none";
+  // document.getElementById('news_btn10').style.display = "none";
   var x = document.getElementById(`news_btn4`);
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -278,6 +298,12 @@ function news_down_btn5() {
   document.getElementById('news_btn2').style.display = "none";
   document.getElementById('news_btn3').style.display = "none";
   document.getElementById('news_btn4').style.display = "none";
+  document.getElementById('news_btn6').style.display = "none";
+  // document.getElementById('news_btn7').style.display = "none";
+  // document.getElementById('news_btn8').style.display = "none";
+  // document.getElementById('news_btn9').style.display = "none";
+  // document.getElementById('news_btn10').style.display = "none";
+  
   var x = document.getElementById(`news_btn5`);
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -287,15 +313,111 @@ function news_down_btn5() {
 
 }
 
-        document.addEventListener("keydown", (e) => {
-  // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
-  // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
-  // THIS WILL ONLY DISABLE CONTROL AND F12
-  if (e.ctrlKey || e.keyCode==123) {
-    e.stopPropagation();
-    e.preventDefault();
+function news_down_btn6() {
+  document.getElementById('news_btn1').style.display = "none";
+  document.getElementById('news_btn2').style.display = "none";
+  document.getElementById('news_btn3').style.display = "none";
+  document.getElementById('news_btn4').style.display = "none";
+  document.getElementById('news_btn5').style.display = "none";
+  // document.getElementById('news_btn7').style.display = "none";
+  // document.getElementById('news_btn8').style.display = "none";
+  // document.getElementById('news_btn9').style.display = "none";
+  // document.getElementById('news_btn10').style.display = "none";
+  
+  var x = document.getElementById(`news_btn6`);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
-});
-        document.addEventListener("contextmenu", (e) => {
-          e.preventDefault();
-        }, false);
+
+}
+// function news_down_btn7() {
+//   document.getElementById('news_btn1').style.display = "none";
+//   document.getElementById('news_btn2').style.display = "none";
+//   document.getElementById('news_btn3').style.display = "none";
+//   document.getElementById('news_btn4').style.display = "none";
+//   document.getElementById('news_btn5').style.display = "none";
+//   document.getElementById('news_btn6').style.display = "none";
+//   document.getElementById('news_btn8').style.display = "none";
+//   document.getElementById('news_btn9').style.display = "none";
+//   document.getElementById('news_btn10').style.display = "none";
+  
+//   var x = document.getElementById(`news_btn7`);
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+
+// }
+// function news_down_btn8() {
+//   document.getElementById('news_btn1').style.display = "none";
+//   document.getElementById('news_btn2').style.display = "none";
+//   document.getElementById('news_btn3').style.display = "none";
+//   document.getElementById('news_btn4').style.display = "none";
+//   document.getElementById('news_btn5').style.display = "none";
+//   document.getElementById('news_btn6').style.display = "none";
+//   document.getElementById('news_btn7').style.display = "none";
+//   document.getElementById('news_btn9').style.display = "none";
+//   document.getElementById('news_btn10').style.display = "none";
+  
+//   var x = document.getElementById(`news_btn8`);
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+
+// }
+// function news_down_btn9() {
+//   document.getElementById('news_btn1').style.display = "none";
+//   document.getElementById('news_btn2').style.display = "none";
+//   document.getElementById('news_btn3').style.display = "none";
+//   document.getElementById('news_btn4').style.display = "none";
+//   document.getElementById('news_btn5').style.display = "none";
+//   document.getElementById('news_btn6').style.display = "none";
+//   document.getElementById('news_btn7').style.display = "none";
+//   document.getElementById('news_btn8').style.display = "none";
+//   document.getElementById('news_btn10').style.display = "none";
+  
+//   var x = document.getElementById(`news_btn9`);
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+
+// }
+// function news_down_btn10() {
+//   document.getElementById('news_btn1').style.display = "none";
+//   document.getElementById('news_btn2').style.display = "none";
+//   document.getElementById('news_btn3').style.display = "none";
+//   document.getElementById('news_btn4').style.display = "none";
+//   document.getElementById('news_btn5').style.display = "none";
+//   document.getElementById('news_btn6').style.display = "none";
+//   document.getElementById('news_btn7').style.display = "none";
+//   document.getElementById('news_btn8').style.display = "none";
+//   document.getElementById('news_btn9').style.display = "none";
+  
+//   var x = document.getElementById(`news_btn10`);
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+
+// }
+
+//         document.addEventListener("keydown", (e) => {
+//   // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
+//   // if (e.ctrlKey || (e.keyCode>=112 && e.keyCode<=123)) {
+//   // THIS WILL ONLY DISABLE CONTROL AND F12
+//   if (e.ctrlKey || e.keyCode==123) {
+//     e.stopPropagation();
+//     e.preventDefault();
+//   }
+// });
+//         document.addEventListener("contextmenu", (e) => {
+//           e.preventDefault();
+//         }, false);
