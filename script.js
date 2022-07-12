@@ -71,9 +71,11 @@ function getdata() {
       } else if (cond == "Light rain shower") {
         document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
       } else if (cond == "Moderate rain") {
-        document.body.style.backgroundImage = "url('/wearther_photo/partly_cloudy1.jpg')"
+        document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
+      } else if (cond == "Moderate or heavy rain shower") {
+        document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
       } else if (cond == "Light drizzle") {
-        document.body.style.backgroundImage = "url('/wearther_photo/partly_cloudy1.jpg')"
+        document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
       } else if (cond == "Light rain") {
         document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
       } else if (cond == "Mist") {
