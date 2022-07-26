@@ -51,21 +51,21 @@ function getdata() {
       } else if (cond == "Patchy rain possible") {
         document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
       } else if (cond == "Partly cloudy") {
-        document.body.style.backgroundImage = "url('/wearther_photo/cloudy/partly_cloudy.jpg')"
+        document.body.style.backgroundImage = "url('/wearther_photo/giphy.gif')"
       } else if (cond == "Overcast") {
         document.body.style.backgroundImage = "url('/wearther_photo/cloudy/pic2.gif')"
       } else if (cond == "Light snow showers") {
-        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow.gif')"
+        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow1.gif')"
       } else if (cond == "Moderate or heavy snow showers") {
-        document.body.style.backgroundImage = "url('/wearther_photo/snow/snow.gif')"
+        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow1.gif')"
       } else if (cond == "Light sleet showers") {
-        document.body.style.backgroundImage = "url('/wearther_photo/partly_cloudy1.jpg')"
+        document.body.style.backgroundImage = "url('/wearther_photo/rain.gif')"
       } else if (cond == "Patchy snow possible") {
-        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow.gif')"
+        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow1.gif')"
       } else if (cond == "Clear") {
         document.body.style.backgroundImage = "url('/wearther_photo/clear3.gif')"
       } else if (cond == "Patchy light snow") {
-        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow.gif')"
+        document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow1.gif')"
       } else if (cond == "Light snow") {
         document.body.style.backgroundImage = "url('/wearther_photo/snow/light_snow1.gif')"
       } else if (cond == "Light rain shower") {
@@ -80,6 +80,8 @@ function getdata() {
         document.body.style.backgroundImage = "url('/wearther_photo/rain1.gif')"
       } else if (cond == "Mist") {
         document.body.style.backgroundImage = "url('/wearther_photo/mist.gif')"
+      }else{
+        document.body.style.backgroundImage = "url('/wearther_photo/cloudy/pic2.gif')"
       }
 
       //container 2
